@@ -1,0 +1,1 @@
+HI insurance of asset {{doc.asset_name}} with policy number: {{doc.policy_number}} will expire on {{doc.insurance_end_date}}.

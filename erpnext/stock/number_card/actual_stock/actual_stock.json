@@ -1,0 +1,23 @@
+{
+ "creation": "2022-02-02 11:32:44.783161",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"company\":\"ABU DHABI POULTRY FARM - SOLE PROPRIETORSHIP L.L.C.\",\"item_group\":\"EGGS\",\"warehouse_type\":\"Store\",\"include_uom\":\"ctn\",\"show_variant_attributes\":0,\"show_stock_ageing_data\":0,\"from_date\":\"2022-01-02\",\"to_date\":\"2022-02-02\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Opening Stock",
+ "modified": "2022-02-02 11:33:02.757996",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Actual Stock",
+ "owner": "Administrator",
+ "report_field": "opening_qty_alt",
+ "report_function": "Sum",
+ "report_name": "Stock Balance",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

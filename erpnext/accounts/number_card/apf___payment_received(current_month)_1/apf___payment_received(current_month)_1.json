@@ -1,0 +1,23 @@
+{
+ "bgcolor": "#ffe4d4",
+ "creation": "2022-03-16 10:19:14.284937",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "APF - Payment Received(Current Month)",
+ "modified": "2022-03-16 13:00:10.796143",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "APF - Payment Received(Current Month)-1",
+ "owner": "Administrator",
+ "report_field": "debit_in_account_currency",
+ "report_function": "Sum",
+ "report_name": "APF - Payment Received(Current Month)",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

@@ -1,0 +1,64 @@
+{
+ "cards": [
+  {
+   "card": "Total Outgoing Bills"
+  },
+  {
+   "card": "Total Incoming Bills"
+  },
+  {
+   "card": "APF - Payment Received(Current Month)"
+  },
+  {
+   "card": "Total Outgoing Payment"
+  },
+  {
+   "card": "APF - Payment Received(Current Month) -"
+  },
+  {
+   "card": "APF - Last Month Payment Received-1"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Profit and Loss",
+   "width": "Full"
+  },
+  {
+   "chart": "Incoming Bills (Purchase Invoice)",
+   "width": "Half"
+  },
+  {
+   "chart": "sales APF",
+   "width": "Half"
+  },
+  {
+   "chart": "Accounts Receivable Ageing",
+   "width": "Half"
+  },
+  {
+   "chart": "Accounts Payable Ageing",
+   "width": "Half"
+  },
+  {
+   "chart": "Budget Variance",
+   "width": "Full"
+  },
+  {
+   "chart": "Bank Balance",
+   "width": "Full"
+  }
+ ],
+ "creation": "2020-07-17 11:25:34.796608",
+ "dashboard_name": "Accounts",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-03-16 15:12:37.745696",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Accounts",
+ "owner": "Administrator"
+}

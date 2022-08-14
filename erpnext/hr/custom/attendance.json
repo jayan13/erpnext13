@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Attendance",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2022-07-12 13:13:33.663892",
+   "default_value": null,
+   "doc_type": "Attendance",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "status",
+   "idx": 0,
+   "modified": "2022-07-12 13:13:33.663892",
+   "modified_by": "Administrator",
+   "name": "Attendance-status-options",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "options",
+   "property_type": "Text",
+   "row_name": null,
+   "value": "\nPresent\nAbsent\nOn Leave\nHalf Day\nWork From Home\nAnnual Leave"
+  }
+ ],
+ "sync_on_migrate": 1
+}

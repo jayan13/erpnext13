@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-02-28 10:45:47.988828",
+ "date_changed": "insurance_end_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Asset",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "HI insurance of asset {{doc.asset_name}} with policy number: {{doc.policy_number}} will expire on {{doc.insurance_end_date}}.",
+ "modified": "2022-02-28 10:46:38.701679",
+ "modified_by": "Administrator",
+ "module": "Assets",
+ "name": "Asset Insurance Expiry",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "cc": "vincent@alantechnologies.net",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "ERP",
+ "sender_email": "erp@binbuttigroup.com",
+ "set_property_after_alert": "",
+ "subject": "This is a Test from erp dev server: Insurance Expiry"
+}

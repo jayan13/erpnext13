@@ -1,0 +1,113 @@
+<style>
+#report_eggs table{
+width: 100%;
+border-collapse: collapse;
+border: 2px solid black;
+}
+#report_eggs table tr{
+border: 2px solid black;
+}
+#report_eggs table tr td{
+border: 2px solid black;
+text-align:center;
+padding:4px;
+}
+#report_eggs table tr td:first-child { text-align: left !important; }
+#report_eggs table tr td:last-child { width:10%; }
+@media print {
+   * { color: black; background: white; }
+   table { page-break-inside:auto }
+    tr    { page-break-inside:avoid; page-break-after:auto }
+   #report_eggs table { font-size: 80%; }
+   #report_eggs table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid black;
+	}
+	#report_eggs table tr{
+	border: 2px solid black;
+	}
+	#report_eggs table tr td{
+	border: 2px solid black;
+	text-align:center;
+	padding:4px;
+	}
+	#report_eggs table tr td:first-child { text-align: left !important; }
+	#report_eggs table tr td:last-child { width:10%; }
+} 
+</style>
+<div id="report_eggs" >
+<p>
+<div style="width: 69%;    font-size: 20px;    font-weight: bold;    float: left;    padding-bottom: 10px;">
+{% if(company){  %}
+&nbsp;&nbsp;&nbsp;&nbsp;Daily Egg room Layer report - {{company}} 
+{%  }  %}
+</div>
+<div style="width: 29%;    font-size: 20px;    font-weight: bold;    float: left;    text-align: end;    padding-bottom: 10px;">
+{{posted_on}} </div></p>
+<table >
+	<tr>
+		<td style="width:18%">Description</td>
+		
+		{% for item in items %}
+        <td style="width:6%">{{ item.item_name }} <br> Ctn</td>
+		{% endfor %}
+		<td style="width:10%">Total</td>
+	</tr>
+	
+	<tr>
+		<td >Oppenning Stock</td>
+		
+		{% for opn in store_oppenning_total %}
+        <td style="width:6%">{{ opn }}</td>
+		{% endfor %}
+		
+	</tr>
+	<tr><td colspan="{{colum_count}}">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+	{% for project in projects %}
+		
+	<tr>
+			<td style="width:18%">{{ project.layers }}</td>
+			{% for qty in project.itemqty %}
+			
+			<td style="width:6%">{{ qty }}</td>
+			{% endfor %}
+			
+	</tr>		
+	 {% endfor %}
+	<tr>
+		<td>Total Daily Production</td>
+		{% for itemtot in item_total %}
+        <td >{{ itemtot }} </td>
+		{% endfor %}
+	</tr>
+	
+ <tr><td colspan="{{colum_count}}">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+	
+	
+	{% for warehouse in warehouses %}
+		
+	<tr>
+			<td style="width:18%">{{ warehouse.name }}</td>
+			{% for qty in warehouse.itemqty %}
+			
+			<td style="width:6%">{{ qty }}</td>
+			{% endfor %}
+			
+	</tr>		
+	 {% endfor %}
+	<tr>
+		<td>Total Loading</td>
+		{% for itemtot in store_item_total %}
+        <td >{{ itemtot }} </td>
+		{% endfor %}
+	</tr>
+	<tr>
+		<td>CLOSSING STOCK</td>
+		{% for itemtot in store_closing_total %}
+        <td >{{ itemtot }} </td>
+		{% endfor %}
+	</tr>
+ </table>
+ 
+</div>
